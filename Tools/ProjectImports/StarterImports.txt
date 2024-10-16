@@ -1,0 +1,4 @@
+Create a new project (with GitHub desktop preferably) and open it in 
+Visual Studio Code via the top button on it's display, if you don't
+see that click file, new repository, and it should show up, if it still
+doesn't check your preferences and set it to Visual Studio Code

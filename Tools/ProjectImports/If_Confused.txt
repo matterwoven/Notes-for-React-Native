@@ -1,0 +1,66 @@
+
+If you are unfamiliar with Imports, it's a concept introduced with Java, it's a method that reduces 
+storage load by manually adding statements, potentially saving you valuable storage
+
+
+Imports tell your language what tools you are going to work with, if you try to use a View element
+when you haven't imported View, then your code wont know how to use that tool, and throw an error, 
+however if you have that import, it now knows how to implement it, and will do swiftly
+
+
+An example
+
+
+-----
+import { StatusBar } from 'expo-status-bar';
+import {  } from 'react-native'; // <- This box will have your imports, for this example it's empty 
+import React from 'react';
+
+//For those who work with C# or other languages 
+//that have mains, this is your main
+
+export default function App() {
+
+  //Create methods above return using const
+  //Format:
+  //const exampleCodeMethod = { [Code here] }
+
+  return (
+      //Note: View is just like <Div> from HTML
+      <View>
+        <Text>Hello World</Text>
+      </View>
+  )
+};
+-----
+
+This will throw an error for both View, and Text. This is because
+the imports for both elements are not defined, if you have an 
+error in any project this is the first culprit you should be checking
+
+-----
+import { StatusBar } from 'expo-status-bar';
+import { View, Text, StyleSheet } from 'react-native'; // <- See that is is now defining the variables used
+import React from 'react';
+
+export default function App() {
+
+  return (
+      //Note: View is just like <Div> from HTML
+      <View>
+        <Text>Hello World</Text>
+      </View>
+  )
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});;
+-----
+
+This will not throw any errors, this is because View, Text, and
+StyleSheet have now been defined. A good habit to build is when
+adding new element, ensure an import backs it, saves time and headaches 

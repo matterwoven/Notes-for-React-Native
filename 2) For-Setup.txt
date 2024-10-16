@@ -1,0 +1,30 @@
+To set up on your computer:
+
+Expo, set up an account by registering:
+https://expo.dev/accounts/matthewvargas 
+
+Node.js set up:
+https://nodejs.org/en
+Automatically installs npm alongside Node
+
+Open your powershell and use this command (No pointer)
+
+-> node --version
+
+-> npm --version
+
+If you see a version (ex: v22.9.0) then you're good
+to move to the next area
+
+----------------
+
+To set up a new project:
+
+First, open your Visual Studio, then open the terminal by using 
+" ctrl + ` " backtick is next to 1 on your keyboard
+
+Create a name for your app and remember it
+-> npx create-expo-app [nameOfAppHere] --template blank
+
+Use the same name here, this routes commands to your project
+-> cd [nameOfAppHere]

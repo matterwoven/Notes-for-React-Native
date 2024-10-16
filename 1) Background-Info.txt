@@ -1,0 +1,32 @@
+
+~React Native~
+
+React Native is fancied up web page logic developed for mobile and desktop devices
+as Applications, knowing the other coding languages listed is reccomended.
+
+The coding languages React Native is a hybrid of
+- JavaScript (JS)
+- HTML
+- CSS (For styling)
+
+Applications made in React Native:
+- Discord
+- Facebook
+- Meta Quest
+- Messenger
+- Outlook
+- Microsoft Teams
+- Skype
+- Almost all Amazon apps for IOS + Android
+- Pinterest
+- NFL, Bloomberg 
+
+If there are any difficulties in developing your project, take a
+look at the 'Tools' folder. The tools folder contains writing on
+elements with built in animations, inspiration for new projects, common
+bugs I've come across, and the imports to start a new project.
+
+Note: This may be incomplete, if all else fails, a well formatted
+google search will do wonders
+
+

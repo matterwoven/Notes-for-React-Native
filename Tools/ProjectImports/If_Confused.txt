@@ -5,15 +5,15 @@ storage load by manually adding statements, potentially saving you valuable stor
 
 Imports tell your language what tools you are going to work with, if you try to use a View element
 when you haven't imported View, then your code wont know how to use that tool, and throw an error, 
-however if you have that import, it now knows how to implement it, and will do swiftly
+however if you have that import, it now knows how to implement it, and will function as normal
 
-
-An example
-
+!
+  I made an example below, read it for better understanding on what this looks like while coding
+!
 
 -----
 import { StatusBar } from 'expo-status-bar';
-import {  } from 'react-native'; // <- This box will have your imports, for this example it's empty 
+import { TextBox } from 'react-native'; // <- This box will contain your imports, in this example it contains the wrong import
 import React from 'react';
 
 //For those who work with C# or other languages 
@@ -34,13 +34,15 @@ export default function App() {
 };
 -----
 
-This will throw an error for both View, and Text. This is because
-the imports for both elements are not defined, if you have an 
-error in any project this is the first culprit you should be checking
+!
+  This will throw an error for both View, and Text. This is because
+  the imports for both elements are not defined, if you have an 
+  error in any project this is the first culprit you should be checking
+!
 
 -----
 import { StatusBar } from 'expo-status-bar';
-import { View, Text, StyleSheet } from 'react-native'; // <- See that is is now defining the variables used
+import { View, Text } from 'react-native'; // <- This is is now matching the variables used, correct
 import React from 'react';
 
 export default function App() {
@@ -51,16 +53,11 @@ export default function App() {
         <Text>Hello World</Text>
       </View>
   )
-}
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});;
+};
 -----
 
-This will not throw any errors, this is because View, Text, and
-StyleSheet have now been defined. A good habit to build is when
-adding new element, ensure an import backs it, saves time and headaches 
+!
+  This will not throw any errors, this is because View, Text, and
+  StyleSheet have now been defined. A good habit to build is when
+  adding new element, ensure an import backs it, saves time and headaches 
+!

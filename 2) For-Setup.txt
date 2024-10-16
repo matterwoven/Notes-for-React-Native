@@ -1,3 +1,4 @@
+
 To set up on your computer:
 
 Expo, set up an account by registering:
@@ -21,10 +22,18 @@ to move to the next area
 To set up a new project:
 
 First, open your Visual Studio, then open the terminal by using 
-" ctrl + ` " backtick is next to 1 on your keyboard
+" ctrl + ` " , the backtick key is next to 1 on your keyboard
 
-Create a name for your app and remember it
+Ensure that you do the following in the terminal, not powershell
+
+Create a name for your app and replace the box with it
 -> npx create-expo-app [nameOfAppHere] --template blank
 
-Use the same name here, this routes commands to your project
+With this your project has completed its formation
+
+To route to your project you want to open on expo use this command
 -> cd [nameOfAppHere]
+
+-> npx expo start
+npx expo start opens your project on your wifi network, using the 
+expo app on your phone scan the QR code, and it will open on there

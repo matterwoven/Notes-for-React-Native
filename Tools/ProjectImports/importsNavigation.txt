@@ -1,0 +1,73 @@
+
+Where imports are sourced from:
+https://reactnavigation.org/docs/getting-started/ 
+
+!
+    Use these commands in the Visual Studio console to 
+    install imports of Nav objects into your project
+!
+
+1 - cd [Project Name Here]
+
+2 - npm install @react-navigation/native 
+
+3 - npx expo install react-native-screens react-native-safe-area-context
+
+!
+    ^ 3's command is present because we are using an 
+    expo managed project, this may not fit your needs
+!
+
+4 - npm install @react-navigation/native-stack
+
+!
+    Install portion finished
+!
+
+
+!
+    The following is example code, work off of this outline if you want
+    to start your own StackNavigator project
+!
+
+-----
+import { React } from 'react';
+import { View, Text, Button } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+//First Screen, Home
+function HomeScreen({navigation}) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Home Screen</Text>
+      <Button title="Details" onPress={() => navigation.navigate("Details")}/>
+    </View>
+  );
+}
+
+//Second Screen, Details
+function DetailsScreen({navigation}) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Details Screen</Text>
+      <Button title="Home" onPress={() => navigation.navigate("Home")}/>
+    </View>
+  );
+}
+
+const Stack = createNativeStackNavigator();
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;
+-----

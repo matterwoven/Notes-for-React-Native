@@ -1,4 +1,30 @@
-Create a new project (with GitHub desktop preferably) and open it in 
-Visual Studio Code via the top button on it's display, if you don't
-see that click file, new repository, and it should show up, if it still
-doesn't check your preferences and set it to Visual Studio Code
+
+To set up a new project:
+
+Open the Visual Studio terminal by using " ctrl + ` ", 
+the backtick key is next to the left of 1 on your keyboard
+
+Creates app
+-> npx create-expo-app [nameOfAppHere] --template blank
+
+Routes commands to project
+-> cd [nameOfAppHere]
+
+Opens your project on your wifi network, using the expo app 
+on your phone scan the QR code, and it will open on there
+-> npx expo start
+
+Note: If it is not connecting make sure you're connected to
+the same Wifi network on both your computer and cell device
+
+-----
+
+When you need a default outline for your code type the following
+shortcut in the code area of VS code
+
+rnfs
+
+This pastes the default import statements, main, and stylesheet 
+onto the page
+
+-----

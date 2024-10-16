@@ -1,0 +1,68 @@
+
+Link to documentation: https://reactnavigation.org/docs/drawer-navigator
+
+!
+    WARNING: It is heavily recommended you read the documentation above (^) to avoid
+    bugs and software problems as implementing swiping involves conditional importing,
+    here be dragons!
+!
+
+!
+    Drawer makes a file-explorer esque section on the left side of the screen that
+    allows you to click on the screen that you would like to open up, this can be
+    conditionally displayed as well, allowing you to enable and disable tabs without
+    too much hassle
+!
+
+1 - cd [Project Name Here]
+
+2 - npm install @react-navigation/drawer
+
+3 - npx expo install react-native-gesture-handler react-native-reanimated
+
+4 - npm install react-native-gesture-handler react-native-reanimated
+
+(Optional) 5 - Work off of the following code to get started
+
+-----
+import * as React from 'react';
+import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+
+function Feed() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Feed Screen</Text>
+    </View>
+  );
+}
+
+function Article() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Article Screen</Text>
+    </View>
+  );
+}
+
+const Drawer = createDrawerNavigator();
+
+function MyDrawer() {
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name="Feed" component={Feed} />
+      <Drawer.Screen name="Article" component={Article} />
+    </Drawer.Navigator>
+  );
+}
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <MyDrawer />
+    </NavigationContainer>
+  );
+}
+
+-----

@@ -31,7 +31,7 @@ Create a name for your app and replace the box with it
 
 With this your project has completed its formation
 
-To route to your project you want to open on expo use this command
+To route commands to the new project
 -> cd [nameOfAppHere]
 
 -> npx expo start

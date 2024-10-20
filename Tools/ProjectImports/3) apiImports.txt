@@ -1,0 +1,24 @@
+
+Where imports are sourced from:
+https://axios-http.com/docs/intro
+
+!
+    Use these commands in the Visual Studio console to 
+    install the ability to interface API's into your project
+!
+
+1 - cd [Project Name Here]
+
+2 - $ npm install axios 
+
+3 - npx expo install react-native-screens react-native-safe-area-context
+
+!
+    Install finished
+!
+
+!
+    API's are able to collect data from URL's to use in your project
+    This can include numbers, strings, image urls, and other data
+    communicatable over a combination of words, numbers, and symbols
+!

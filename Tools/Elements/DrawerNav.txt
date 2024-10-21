@@ -14,6 +14,11 @@ Link to documentation: https://reactnavigation.org/docs/drawer-navigator
     too much hassle
 !
 
+! 
+  Prior to any steps check ProjectImports.txt\navigationImports.txt for importing
+  the prerequisites for this project
+!
+
 1 - cd [Project Name Here]
 
 2 - npm install @react-navigation/drawer

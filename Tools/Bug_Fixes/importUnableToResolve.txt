@@ -1,0 +1,37 @@
+
+!
+    iOS Bundling failed 505ms C:\Users\User\my-first-app\Showcase_App\Showcase_App_React\node_modules\expo\AppEntry.js (636 modules)
+    Unable to resolve "@react-navigation/drawer" from "App.js"
+!
+
+Error points to import of an element
+
+!
+    ex: > 4 | import { NavigationContainer }
+        from '@react-navigation/drawer'
+              ^ Keep in mind where it's from
+!
+
+To resolve this issue check off the following
+
+a - Your code works/should work
+b - Does it have the proper imports
+c - Is there any mispelling
+
+!
+    If you have checked all the above then see below for the 
+    missing imports, remember to cd [projectName] beforehand
+!
+
+1 - from `@.../drawer`
+    then follow instructions from Elements\DrawerNav.txt
+
+2 - from `@.../bottom-tabs`
+    then follow instructions from Elements\BottomNav.txt
+
+3 - from `@.../native` 
+    from `@.../native-stack
+    then follow instructions from Elements\NativeStackNav.txt
+
+If your import is not here look up the imports for your element
+online, and then follow those instructions to resolve the issue

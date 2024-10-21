@@ -10,6 +10,11 @@ Tried:
 
 1 - Deleted .expo, node_modules and reinstalled via npx expo install expo-web-browser
 
-1 - create .npmrc in your project root
-2 - add node-linker=hoisted to the file and save it
-3 - delete your pnpm-lock.yaml and node_modules, run pnpm install again
+2 - Started project fresh from the start, I have identified this is an issue with my user in general, or some package residue on my pc
+
+3 - Fresh project opens just fine on my phone, if there is an issue it lies only on my computer, not my code
+
+!
+    Web Bundling failed 752ms C:\Users\User\my-first-app\Showcase_App\Showcase_App_React\node_modules\expo\AppEntry.js (4 modules)
+    Unable to resolve "react-native-web/dist/exports/AppRegistry" from "node_modules\expo\build\launch\registerRootComponent.js"
+!

@@ -20,9 +20,8 @@ Link to documentation: https://reactnavigation.org/docs/drawer-navigator
 
 3 - npx expo install react-native-gesture-handler react-native-reanimated
 
-4 - npm install react-native-gesture-handler react-native-reanimated
-
-(Optional) 5 - Work off of the following code to get started
+(Optional) 4 - npm install react-native-gesture-handler react-native-reanimated
+ ^ Install if not using expo, replaces number 3
 
 -----
 import * as React from 'react';

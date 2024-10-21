@@ -1,0 +1,15 @@
+
+!
+    Web Bundling failed 16ms C:\Users\User\my-first-app\MidTermProject_ReactShowcaseApp\ReactShowcaseApp\node_modules\expo\AppEntry.js (1 module)
+    Unable to resolve "react-native-web/dist/exports/AppRegistry" from "node_modules\expo\build\launch\registerRootComponent.js"
+!
+
+Currently unresolved
+
+Tried:
+
+1 - Deleted .expo, node_modules and reinstalled via npx expo install expo-web-browser
+
+1 - create .npmrc in your project root
+2 - add node-linker=hoisted to the file and save it
+3 - delete your pnpm-lock.yaml and node_modules, run pnpm install again

@@ -10,6 +10,9 @@ Creates app
 Routes commands to project
 -> cd [nameOfAppHere]
 
+Allows you to open your project in a web browser by pressing w
+-> npm i react-native-web
+
 Opens your project on your wifi network, using the expo app 
 on your phone scan the QR code, and it will open on there
 -> npx expo start
@@ -17,14 +20,14 @@ on your phone scan the QR code, and it will open on there
 Note: If it is not connecting make sure you're connected to
 the same Wifi network on both your computer and cell device
 
------
+!
 
-When you need a default outline for your code type the following
-shortcut in the code area of VS code
+    When you need a default outline for your code type the following
+    shortcut in the code section of VS code
 
-rnfs
+    rnfs
 
-This pastes the default import statements, main, and stylesheet 
-onto the page
+    This pastes the default import statements, main, and stylesheet 
+    onto the page
 
------
+!

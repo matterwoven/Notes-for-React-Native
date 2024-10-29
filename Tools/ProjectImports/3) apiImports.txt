@@ -11,8 +11,6 @@ https://axios-http.com/docs/intro
 
 2 - npm install axios 
 
-3 - npx expo install react-native-screens react-native-safe-area-context
-
 !
     Install finished
 !

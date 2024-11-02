@@ -1,0 +1,26 @@
+!
+    After a bit of soul searching I figured out that the error regarding the import
+    of the Image element was the same issue as importUnableToResolve
+!
+!
+    Excerpt from error
+!
+!
+    Error: Unable to resolve module react-native-web from C:\Users\User\my-first-app\Showcase_App\Showcase_App_React\App.js: react-native-web could not be found within the project or in these directories:
+        node_modules
+        ..\..\..\node_modules
+     9 | import { createNativeStackNavigator } from '@react-navigation/native-stack';
+    10 | import { AccessDenied } from './modules/AccessDenied';
+  > 11 | import { Image } from 'react-native-web';
+       |                        ^
+!
+
+
+    To resolve this issue check off the following
+
+    a - Your code works/should work
+    b - Does it have the proper imports
+    c - Is there any mispelling
+
+    d - After ensuring the previous, type 'Image' and using intellisense down arrow/up arrow to cycle through Image elements,
+        repeat until you test all of the Image imports, by testing them you'll find one that is compatible with your project

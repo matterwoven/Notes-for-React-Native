@@ -11,7 +11,7 @@ Routes commands to project
 -> cd [nameOfAppHere]
 
 Allows you to open your project in a web browser by pressing w
--> npm i react-native-web
+-> npx expo install @expo/metro-runtime
 
 Opens your project on your wifi network, using the expo app 
 on your phone scan the QR code, and it will open on there

@@ -2,8 +2,8 @@
 Link to documentation: https://reactnavigation.org/docs/stack-navigator/
 
 !
-  Creates a Navigation method for your application, utilize buttons or other
-  creative concepts to move the user around your components intuitively
+  Allows you to use a navigation method for your apps, use in order to
+  make interesting interfaces, widen an apps utility, and much more
 !
 
 1 - cd [Project Name Here]

@@ -1,0 +1,42 @@
+Link to documentation: https://reactnative.dev/docs/image
+
+!
+    Images are key to many projects you may think about doing,
+    listed is example code to help you in implementing Images
+    if you don't know where to start
+!
+
+!
+  Install finished
+!
+-----
+import React from 'react';
+import {View, Image, StyleSheet} from 'react-native';
+
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 50,
+  },
+  stretch: {
+    width: 50,
+    height: 200,
+    resizeMode: 'stretch',
+  },
+});
+
+const DisplayAnImageWithStyle = () => {
+  return (
+    <View style={styles.container}>
+      <Image
+        style={styles.stretch}
+        source={{
+          uri: 'https://reactnative.dev/img/tiny_logo.png',
+        }}
+      />
+    </View>
+  );
+};
+
+export default DisplayAnImageWithStyle;
+
+-----

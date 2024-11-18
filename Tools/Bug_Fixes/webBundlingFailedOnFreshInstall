@@ -1,0 +1,7 @@
+
+!
+  After a few months of this issue I found the resolution to this issue, no matter the amount of fresh installs I did and new project trees it was bugged
+  I used this command and it all fixed itself, it clears the cache and replaces it if it's found as empty
+!
+
+-> npx expo start -c
